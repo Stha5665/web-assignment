@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url('img/imgg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-repeat: no-repeat;
+}
+nav{
+	display: flex;
+	padding: 2% 5%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width:150px;
+	border: 3px solid black;
+	border-radius: 50px;
+}
+.nav-list ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-list ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	transition: all .3s ease;
+}
+.nav-list ul li a:hover{
+	color: #3DCFD3;
+}
+.textbox{
+	width: 100%;
+	color: white;
+	position: absolute;
+	text-align: center;
+	
+	margin: 20% auto;
+	transform: translateY(-50%);
+}
+.textbox-title{
+	display: flex;
+	text-align: left;
+	line-height: 100px;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	height:100px;
+	overflow: hidden;
+
+	
+ }
+ .textbox-title span{
+	color: #3DCFD3;
+	margin-right: 10px;
+}
+.textbox p{
+	font-size: 20px;
+	height: 100px;
+	line-height: 50px;
+}
+.textbox-title .slider{
+	margin-left:15px;
+	color: #def30e;
+	font-weight: bold;
+	box-sizing: border-box;
+	animation: slider 6s linear infinite;
+}
+@keyframes slider{
+	0%{ margin-bottom: -400px; }
+	5%{ margin-bottom: -200px; }
+	30%{ margin-bottom: -200px; }
+	35%{ margin-bottom: 0px; }
+	65%{ margin-bottom: 0px; }
+	70%{ margin-bottom: 200px;}
+	100%{ margin-bottom: 200px; }
+
+}
+
+/* Css for Portfolio starts from here */
+
+.view{
+	margin-bottom: 23px;
+	min-height: 100vh;
+
+
+}
+.middle{
+    background: black;
+	margin: 5px 0;
+	padding: 100px 0;
+	display: flex;
+
+}
+.middle .left{
+	background: #3DCFD3;
+	padding: 15% 0;
+	width: 50%;
+	margin: 0 60px;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.middle .left:hover{
+	box-shadow: 20px 20px;
+	transform: translate(-30px,-40px);
+	background: red; opacity: 0.8;
+
+
+
+}
+.middle .right{
+	background: #5a5af2;
+	width: 50%;
+	padding: 15% 0;
+	margin: 0 40px;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: all .5s ease;
+	cursor: pointer;
+}	
+.middle .right:hover{
+	background: #9cb02d;
+
+	box-shadow: 20px 20px;
+	transform: translate(-30px,-40px);
+}
+
+/* CSS for Contact page starts from here */
+.about{
+	width:;
+	min-height: 40vh;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	
+}
+.about h1{
+	display: flex;
+	text-align: left;
+	line-height: 100px;
+	justify-content: center;
+	align-items: center;
+	color: #c72121;
+	height:100px;
+
+}
+.about p{
+	font-size: 18px;
+	height: 100px;
+	line-height: 30px;
+
+}
+.contact-info{
+	text-align: center;
+	min-height: 90vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+.contact-info .aa{
+	margin-top: 80px;
+	margin-left: 30px;
+	font-size: 30px;
+	color: #c72121;
+	font-weight: bold;
+
+}
+.contact-info .aa-next{
+	margin-left: 30px;
+	font-size: 18px;
+	line-height: 50px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+
+
+}
+fieldset{
+	text-align:left;
+	margin: 50px 200px;
+	padding: 3%;
+	line-height: 27px;
+}
