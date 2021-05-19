@@ -197,3 +197,80 @@ fieldset{
 	padding: 3%;
 	line-height: 27px;
 }
+
+/* Css for cv page starts from here */
+.cv_title{
+	color: #c72121;
+	font-size: 40px;
+	margin: 100px 50px;
+	font-weight: bold;
+}
+
+.for_cv{
+	min-height: 100vh;
+	width:100%;
+	box-sizing: border-box;
+
+}
+.p_info{
+	background: #c72121;
+	height: 300px;
+	width: 25%;
+	margin-left: 250px;
+	float: left;
+	color: white;
+	font-weight: bold;
+	text-align: center;	
+}
+.p_info p, .qualification p, .current p, .skills p, .hobbies p{
+	margin: 12px;
+	color: black;
+	text-align: left;
+	line-height: 50px;
+}
+
+.qualification{
+	background: #c72121;
+	height: 300px;
+	width: 25%;
+	margin-right: 250px;
+	float: right;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.current{
+	background: #c72121;
+	height: 300px;
+	width: 25%;
+	margin: 120px 50px;
+	float: left;
+	clear: both;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.skills{
+	background: #c72121;
+	height: 300px;
+	width: 25%;
+	float: left;
+	margin: 120px 50px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hobbies{
+background: #c72121;
+	height: 300px;
+	width: 25%;
+	margin: 120px 50px;
+	float: right;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
