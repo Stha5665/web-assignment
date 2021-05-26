@@ -3,14 +3,18 @@
 <head>
 		<title> Portfolio page </title>
 		<link href="style.css" type="text/css" rel="stylesheet">
-
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
 		<section class="container">
-			<nav>
+			<nav class="navbar">
 				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
-				<div class="nav-list">
+				<div class="burger">
+					<div class="ham"></div>
+					<div class="ham"></div>
+					<div class="ham"></div>
+				</div>
+				<div class="nav-list v-class">
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
@@ -19,14 +23,16 @@
 						<li><a href="sitereport.html"> site report </a> </li>
 					</ul>
 				</div>
-			</nav>
+				
+				</nav>
 			<div class="textbox">
-				<div class="textbox-title view"><span> This </span> is my portfolio page. </div>
+				<div class="textbox-title"><span> This </span> is my portfolio page. </div>
 			</div>
 		</section>
 		<div class="middle">
 			<div class="left"> This is placeholder. <br>Here will be my work of second term. </div>
 			<div class="right"> This is also placeholder.<br> Here will be another work. </div>
 		</div>
+		<script src="js/ham_menu.js"></script>
 	</body>
 </html>

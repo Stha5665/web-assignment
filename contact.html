@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title> Contact Page </title>
-		<link href="style.css" type="text/css" rel="stylesheet">
-
-
+	<title> Contact Page </title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
 		<section class="container">
-			<nav>
+			<nav class="navbar h-nav">
 				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
-				<div class="nav-list">
+				<div class="burger">
+					<div class="ham"></div>
+					<div class="ham"></div>
+					<div class="ham"></div>
+				</div>
+				<div class="nav-list v-class">
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
@@ -21,7 +25,7 @@
 				</div>
 			</nav>
 			<div class="textbox">
-				<div class="textbox-title view"><span> Welcome, </span> This is contact page. </div>
+				<div class="textbox-title"><span> Welcome, </span> This is contact page. </div>
 			</div>
 		</section>
 
@@ -38,6 +42,7 @@
 				<div class="cc"> Contact Number: +977-9841000000 </div>
 				<div class="dd"> Location: Kathmandu, Nepal </div>
 				<div class="ee"> Fax No: 000000 </div>
+				<a href="mailto: aayush.2021194@nami.edu.np"> Send Feedback </a>
 			</div>
 
 			<form>
@@ -55,5 +60,6 @@
 				</fieldset>
 			</form>
 		</div>
+		<script src="js/ham_menu.js"></script>
 	</body>
 </html>
