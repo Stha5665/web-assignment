@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> Cv Page </title>
-	<link href="style.css" type="text/css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<html lang="en">
+<!-- lang attribute to the html start tag declare language of this documents -->
+	<head>
+		<meta charset="UTF-8">
+		<title> Cv Page </title>
+		<link href="style.css" type="text/css" rel="stylesheet"> <!-- This link to our CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This property is defined to make my website responsive -->
+	</head>
 	<body>
-		<section class="container">
+		<section class="container"> <!-- class named container starts from here -->
+			<h2>a</h2> <!-- h2 tag is specified here to add identifying headings to all section,that was required for complete validation of HTML-->
 			<nav class="navbar">
-				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
+				<a href="index.html"><img src="img/logo.png" alt="The area for logo"></a>
 				<div class="burger">
+					<!-- burger class is specified for making hamburger icon which is visible in responsive view -->
 					<div class="ham"></div>
 					<div class="ham"></div>
 					<div class="ham"></div>
 				</div>
-				<div class="nav-list v-class">
+				<div class="nav-list v-class"> 
+					<!-- v-class here determines visibility property of navlist in responsive view -->
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
@@ -23,18 +29,20 @@
 						<li><a href="sitereport.html"> site report </a> </li>
 					</ul>
 				</div>
-				</nav>
-		<div class="textbox">
+			</nav>
+			<div class="textbox">
 				<div class="textbox-title"><span> This </span> is my 
-					<div class="slider">
+					<!-- span tag helps to give different color for specific word, which property is defined in CSS -->
+					<div class="slider">  <!-- slider class helped to perform animation -->
 						<div>CV Page.</div>
 						<div>Cv Page.</div>
 						<div>CV page.</div>
 					</div>
 				</div>
-		</section>
+			</div>
+		</section>  <!-- class ".container" ends here -->
 		<div class="cv_title"> Here is some information for my CV. </div>
-		<div class="for_cv">
+		<div class="for_cv"><!-- this div is defined for multiple div inside it -->
 			<div class="p_info">
 				<h1> Personal Information:</h1>
 				<p> Full Name: Aayush Shrestha<br>
@@ -48,22 +56,26 @@
 				<h1> Qualification: </h1>
 			 	<p> SEE: Grade A+  <br>(passed from Navajeewan Educational Academy)<br>
 			 		+2 Science: Grade A<br>  (passed from National School of Sciences)
+			 	</p>
 			</div>
 			<div class="current">
 				<h1>Current Program:</h1>
 				<p> Student, currently studying program: Bsc(Hons)Computing<br>
 				In NAMI College, Jorpati
+				</p>
 			</div>
 			<div class="skills">
 				<h1> Skills: </h1>
 				<p> - Capable in speaking languages (Nepali, English)<br>
 					- Able to design basic layout of <br>website using Html and CSS.<br>
 					- Good in arts.
+				</p>
 		    </div>
 			<div class="hobbies">
 				<h1> Hobbies:</h1>
 				<p> Reading Books, Learning codes, <br> Writing poems, Producing Beats,<br>
 					Website development, Making Songs, <br>Texting Friends
+				</p>
 			</div>
 		</div>
 		<script src="js/ham_menu.js"></script>

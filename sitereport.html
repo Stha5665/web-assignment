@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> Home Page </title>
-	<link href="style.css" type="text/css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<html lang="en">
+<!-- lang attribute to the html start tag declare language of this documents -->
+	<head>
+		<meta charset="UTF-8">
+		<title> Site report page </title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- This property is defined to make my website responsive -->
+	</head>
 	<body>
 		<section class="container">
+			<h2>a</h2><!-- h2 tag is specified here to add identifying headings to all section,that was required for complete validation of HTML-->
 			<nav class="navbar">
-				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 				<div class="burger">
+					<!-- burger class is specified for making hamburger icon which is visible in responsive view -->
 					<div class="ham"></div>
 					<div class="ham"></div>
 					<div class="ham"></div>
 				</div>
-				<div class="nav-list v-class">
+				<div class="nav-list v-class"> <!-- v-class here determines visibility property of navlist in responsive view -->
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
@@ -24,3 +29,174 @@
 					</ul>
 				</div>
 			</nav>
+			<div class="textbox">
+				<div class="textbox-title"><span> This Page has </span> site report. </div>
+			</div>
+	
+		</section>
+		<div class="text-area">
+				<div class="az">
+					<p>
+						This assignment is first assignment of my 1st term, which include many learnings, knowledge, failures and basics of web development.<br> Here, I created 5 pages as defined in brief that includes Homepage (index.html), Portfolio (portfolio.html), CV (cv.html), Contact page( contact.html) and Site report (sitereport.html). <br>Each page has linked with each other and there is presence of hamburger menu, which can be visible in mobile view. I used the same overall website layout and we can reach each page from navigation menu, which is consistent across each page of website. I made it responsive which is adaptive according to different screen size.
+					</p>
+				</div>
+
+				<div class="ab">
+					<p>
+						<span> Homepage:</span>
+						<br>
+						At first, I created my homepage (index.html). This page contains logo of my website aligned towards left along with navlist aligned right in the desktop view. This page took long time for it’s layout as I was not ready with my plan. I reviewed my all notes, lectures remembered tips and tricks of CSS and HTML  taught by my tutor Thapa Ankit (2021). Overall duration of first term was great learning time with Mr Thapa.
+					
+						<br>
+						- I introduced my homepage with animation which I learned few months ago from:<br> Easy Tutorials (2021) How To Make A Website With Sliding Text Using HTML And CSS step by step. 
+					</p>
+						<div class="bv">YouTube </div> [online]. Available from: <a href="https://youtu.be/y3gnBzUxobw"> link here </a> [Accessed 14 March 2021].
+						<br>
+					<p>
+						- My purpose of building this website and my responsibilities are also texted in this page. In mobile view, logo is at center and hamburger menu and navlist are at left. The hamburger can be toggle so that navlist is visible or to hide navlist. For responsive hamburger I referenced one of video of my favourite youtube tutor: <br> CodeWithHarry (2020) Create a Responsive Website Using  HTML, CSS & JavaScript in Hindi.
+					</p>
+						<div class="bv"> YouTube </div>[online]. Available from:<a href="https://youtu.be/GeykycZ4Ixs"> link here</a> [Accessed 3rd April 2021].
+						<br>
+
+						- The textbox-title contain (color: #3DCFD3) with some white coloured text that suited with black/darken background.<br>
+						- HTML validation was tested from: 
+						<div class="bv"> 
+						The W3C Markup Validation Service </div>[online].
+						Available from: <a href="https://validator.w3.org/"> link here </a><br>
+						- There is valid HTML for home page as shown in below. 
+						<img src="img/homepage-validation.png" alt="homepage valid html with no error">
+					<br>
+					<p>
+					<span>Portfolio page: </span><br>
+					
+						- CSS of section area i.e. “.container” of portfolio is same as "index.html” i.e. line-no (7 to 79) text editor.<br>
+						- This page contains two large columns with placeholder image inside it. That will be replace by my work of term 2.<br>
+						- Two columns with some transition effect on hover made the empty block eye catchy in my opinion. <br>
+						- This page was confusing because there defined Placeholder image’s was unknown to me. <br>
+						- In mobile view, the class “.middle” (under 794px) displayed in single column with flex property.<br>
+						-The placeholder image used here was taken from:
+					</p>
+						<div class="bv">Shopify</div>[online].
+						Available from: <a href="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=webp&v=1530129081"> link here </a> Accessed [15 May 2021]
+						<br>
+						
+						- HTML validation was tested from: 
+						<div class="bv"> 
+						The W3C Markup Validation Service </div>[online].
+						Available from: <a href="https://validator.w3.org/"> link here </a><br>
+						- There is valid HTML for portfolio page as shown in below. 
+						<img src="img/portfoliopage-validation.png" alt="portfoliopage valid html with no error">
+						<br>
+
+					<p>
+						<span>Contact Page:</span><br>
+					
+						- CSS of section area i.e. “.container” of contact page is same as "index.html” i.e. from line-no (7 to 79) text editor.<br>
+						- After container, section class “.about” starts, which contain few lines about me and some of my contact information aligned around center.<br>
+						- Send Feedback contains (mailto: tag with link of my gmail, which will directly let you to compose mail to me regarding any queries, comments, etc.<br>
+						- Form bounded with certain coverage of area using property (fieldset).<br>
+						- You have to Input your Full Name and email there.<br>
+						- There is presence of two buttons one for form submission and another for resetting entering value into default value.<br>
+						- HTML validation was tested from: 
+					</p>
+						<div class="bv"> 
+						The W3C Markup Validation Service 
+						</div>
+						[online]. Available from: <a href="https://validator.w3.org/"> link here </a><br>
+						- There is valid HTML for contact page as shown in below. 
+						<img src="img/contact-page-validation.png" alt="contactpage valid html with no error">
+					<br>
+					<p>
+					<span>CV Page:</span> <br>
+						- CSS of section area i.e. “.container” of contact page is same as "cv.html” i.e. from line-no (7 to 79) text editor. After “.conatiner”, I have created some cv, including: personal information, qualification, current program, skills, hobbies. Here, personal information, qualification are defined in one row whereas, current program, skills, hobbies blocks are defined in another row.<br>
+						- In mobile view, these blocks display vertically, each in different row.<br>
+						- I selected background: #c72121 from chrome developer tool, which matches and give simple layout.<br>
+						- HTML validation was tested from: 
+					</p>
+						<div class="bv"> 
+						The W3C Markup Validation Service </div>[online].
+						Available from: <a href="https://validator.w3.org/"> link here </a><br>
+						- There is valid HTML for cv page as shown in below. 
+						<img src="img/cv-validation.png" alt="cv page valid html with no error">
+				
+						<br>
+					<p><span> Site Report page: </span><br>
+						- This page also contain valid HTML and CSS.
+						- HTML validation was tested from: 
+						<div class="bv"> 
+						The W3C Markup Validation Service </div>[online].
+						Available from: <a href="https://validator.w3.org/"> link here </a><br>
+						- There is valid HTML for cv page as shown in below. 
+						<img src="img/sitereport-validation.png" alt="valid html with no error of site report page">
+				
+						<br>
+						
+						- The overall CSS for all webite is valid which was tested from:
+						<div class="bv">
+						The W3C CSS Validation Service -Jigsaw</div>[online].
+						Available from:<a href="https://jigsaw.w3.org/css-validator/"> link here. </a><br>
+						There is valid CSS for all page which includes home page, portfolio page, contact page, cv page and site report.
+						<img src="img/css-validation.png" alt="valid CSS image">
+					<p>
+						The background image and logo image used in each website is taken from two different websites.<br>
+						- I took my background image: <br>Sean Pollock (2017) Taller than the Trees.
+					</p>
+						<div class="bv"> Unsplash</div> [online]. Available from:<a href="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80">link here </a> [Accessed 13 May 2021].
+						<br>
+						- The logo image of my website taken from:<br> 
+						<div class="bv">vhv.rs</div> [online]. Available from:
+						 <a href="https://www.vhv.rs/dpng/d/512-5121842_portfolio-png-png-download-portflio-logo-transparent-png.png"> link here</a> [Accessed 13 May 2021].
+						<br>
+						<br>
+					<p>
+						<span> Debugging: </span><br>
+					
+						In mobile view, I set to display navlist into rows when hamburger is toggled along with moving ".textbox", which covered more area than I mentioned showing unnecessary blank area toward bottom. So, I fixed with adjusting navlist to display its element in columns.
+						<br>
+						<br>
+							- Image of website with previous navlist layout is given below.
+						<img src="img/pnavlist.png" alt="initial navlist layout image">
+						<br>
+							- Overflowing height of ".container" showing blank in bottom:
+						<img src="img/overflown.png" alt="Overflowing height of container showing blank in bottom">
+						<br>
+							- There was searchbar at right handside top of website which was not giving the good looks for my website so I removed that searchbar which made this website simple and attractive. For Consistence design according to screensize, I defined mediaqueries for different max-width i.e.( 1262px, 794px, 500px, 400px)
+					</p>
+				</div>
+				<div class="az">
+					<p>
+						This page contains overall review of my website. This is one of the hard task that, I felt in my life. With little knowledge of HTML I started my Bsc(Hons)Computing program. Now, after completion of my assignment I gained enough knowledge for simple layout of website.
+					</p>
+					<br>
+					<p>
+						 At the time, I received this assignment notice I was not feeling well, I was suffering from mild type of Covid-19. This depressed me thinking that, “I am sure to fail, if couldn’t finished this task “. After few days I was feeling good and then started to do this tasks. Initially, at start of module each property of CSS was confusing and hard to remember. It was hard to complete tasks during tutorial session. Now, due to enough hardwork and consistency, I am able to complete my first term assignment task.
+					</p>
+					<br> 
+					<p>
+						 This project took many days, many hours for its completion. For professional, it is about some few minutes task but truly, for me it took more than 14 days.
+						 <br>
+						 <br>
+						 Debugging process was very hard job for me, as I created desktop view first with some fixed flex property that not letting its element to move, the hamburger menu was no adjusting according to my will the navlist elements was overflowing from its position. The leaving text items along with change in screen size also burden me.
+					</p>
+					<br>
+					<p>
+						Forgetting, all pain that I suffered during this assignment, it was joy to learn to build portfolio website. Many researched and time to time reviewing, reading notes, slides made possible to complete this task. Leaving greediness of time, I filled it full of my valuable time. Hope! You liked my overall website. 
+						<br>
+						Sincerely yours,
+						<br>
+						Aayush Shrestha
+					</p>
+				</div>
+			</div>
+		<script src="js/ham_menu.js"></script>
+	</body>
+</html>
+
+			 
+
+
+
+
+
+
+			

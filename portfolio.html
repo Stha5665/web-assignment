@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+<!-- lang attribute to the html start tag declare language of this documents -->
+	<head>
+		<meta charset="UTF-8">
 		<title> Portfolio page </title>
-		<link href="style.css" type="text/css" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet"> <!-- This link to our CSS -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+		<!-- This property is defined to make my website responsive -->
+	</head>
 	<body>
-		<section class="container">
+		<section class="container">  <!-- class named container starts from here -->
+			<h2>a</h2><!-- h2 tag is specified here to add identifying headings to all section, that was required for complete validation of HTML-->
 			<nav class="navbar">
-				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
-				<div class="burger">
+				<a href="index.html"><img src="img/logo.png" alt="The area for logo"></a>
+				<div class="burger"> 
+					<!-- burger class is specified for making hamburger icon which is visible in responsive view -->
 					<div class="ham"></div>
 					<div class="ham"></div>
 					<div class="ham"></div>
 				</div>
-				<div class="nav-list v-class">
+				<div class="nav-list v-class"> <!-- v-class here determines visibility property of navlist in responsive view -->
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
@@ -23,16 +28,20 @@
 						<li><a href="sitereport.html"> site report </a> </li>
 					</ul>
 				</div>
-				
-				</nav>
+			</nav>
 			<div class="textbox">
 				<div class="textbox-title"><span> This </span> is my portfolio page. </div>
 			</div>
-		</section>
-		<div class="middle">
-			<div class="left"> This is placeholder. <br>Here will be my work of second term. </div>
-			<div class="right"> This is also placeholder.<br> Here will be another work. </div>
+		</section> <!-- class ".container" ends here -->
+		<div class="middle"> <!-- This div contains two block which contains placeholder image -->
+			<div class="left">
+				<img src="img/placeholder-image.png" alt="placeholder image"> <br>This is placeholder. <br>Here will be my work of second term. </div>
+			<div class="right"> 
+				<img src="img/placeholder-image.png" alt="placeholder image">
+				<br>
+			This is also placeholder.<br> Here will be another work. </div>
 		</div>
 		<script src="js/ham_menu.js"></script>
 	</body>
 </html>
+	
