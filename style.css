@@ -2,23 +2,33 @@
 	margin: 0;
 	padding: 0;
 }
+/* this help to set intial layout margin and padding to 0 */
+
 .container{
 	width: 100%;
 	min-height: 115vh;
 	background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url('img/imgg.jpg');
 	background-size: cover;
 	background-position: center;
-	position: relative;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 }
+/* here i used background image with its minimum height 115vh, 100% width which provided me enough area for ".textbox" */
+
+.container h2{
+	max-height: 0px;
+	visibility: hidden;
+	overflow: hidden;
+}
+
 .navbar{
 	display: flex;
 	padding: 2% 5%;
 	align-items: center;
 }
+/* flex used here display (.navbar image, .nav-list ) in a line around center */
+
 .navbar img{
-	
 	width:150px;
 	border: 3px solid black;
 	border-radius: 50px;
@@ -32,8 +42,9 @@
     display: inline;
     list-style: none;
     padding: 10px;
-    position: relative;
 }
+ /* display property here bring each element of nav-list in a line */
+
 .nav-list ul li a{
 	text-decoration: none;
 	font-size: 20px;
@@ -49,11 +60,12 @@
 .textbox{
 	width: 100%;
 	color: white;
-	position: absolute;
 	text-align: center;
 	margin: 18% auto;
 	transform: translateY(-50%);
 }
+/* transform and margin used here helped to bring item of textbox towards center */
+
 .textbox-title{
 	display: flex;
 	text-align: left;
@@ -72,7 +84,6 @@
 }
 .textbox p{
 	font-size: 20px;
-	
 	line-height: 50px;
 }
 .textbox-title .slider{
@@ -82,73 +93,89 @@
 	box-sizing: border-box;
 	animation: slider 6s linear infinite;
 }
+/* here div inside ".slider" is designed to perform desired animation for infinite times */
+
 @keyframes slider{
 	0%{ margin-bottom: -400px; }
 	5%{ margin-bottom: -200px; }
 	30%{ margin-bottom: -200px; }
-	35%{ margin-bottom: 0px; }
-	65%{ margin-bottom: 0px; }
-	70%{ margin-bottom: 200px;}
+	35%{ margin-bottom: 0; }
+	65%{ margin-bottom: 0; }
+	70%{ margin-bottom: 200px; }
 	100%{ margin-bottom: 200px; }
-
 }
 
+/* initially at 0% this at bottom and the sliding text is not visible, at 5% slider
+is at -200px from 0px so that 1st div of ".slider" is visible which lasts upto 30%.
+At 35% it is at 0px and 2nd div of ".slider" is visible which lasts upto 65% of animation
+duration. At 70%, 100% it is at 200px from 0px and 3rd div of ".slider" is vislible*/
 
+/* Some concept of sliding text I used here (line no: 89 to 100) learned from :
+ Easy Tutorials  (2021)  How To Make A Website With Sliding Text Using HTML And CSS step by step.
+ YouTube [online]. Available from: https://youtu.be/y3gnBzUxobw   [Accessed 14 March 2021].
+*/
 
-/* Css for Portfolio starts from here */
+/* Css for Portfolio page starts from here */
 
-
+/* Css of section area of "portfolio.html" is same as "index.html"
+from line no(7 to 79)*/
 
 .middle{
     background: black;
 	margin: 5px 0;
-	padding: 120px 0px;
-	min-height: 115vh;
+	padding: 120px 0;
+	min-height: 90vh;
 	display: grid;
 	grid-template-columns: 50% 48%;
-	box-sizing: border-box;
-
+}
+/* grid property helped the ".middle" class to display in columns */
+.middle img{
+	margin: 20px auto;
+	height: 500px;
+	width: 480px;
 }
 .middle .left{
 	background: #3DCFD3;
-	padding: 15% 0;
 	margin: 10px 60px;
 	color: white;
 	font-weight: bold;
-	font-size: 40px;
-	text-align: bottom-center;
-	box-sizing: border-box;
+	font-size: 30px;
+	text-align: center;
 	transition: all .5s ease;
 	cursor: pointer;
+	height: 650px;
 }
+/* property for ".left" block is specified here */
 .middle .left:hover{
 	box-shadow: 20px 20px;
 	transform: translate(-30px,-40px);
 	background: red; opacity: 0.8;
 
 }
+
 .middle .right{
 	background: #5a5af2;
-	padding: 15% 0;
 	margin: 10px 40px;
 	color: white;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
-	box-sizing: border-box;
 	transition: all .5s ease;
 	cursor: pointer;
+	height: 650px;
 }	
+/* property for ".right" block is specified here */
+
 .middle .right:hover{
 	background: #9cb02d;
-
 	box-shadow: 20px 20px;
 	transform: translate(-30px,-40px);
 }
 
 /* CSS for Contact page starts from here */
+/* Css of section area of "contact.html" is same as "index.html"
+from line no(7 to 79)*/
 .about{
-	width:;
 	min-height: 40vh;
 	margin: 20px 0;
 	display: flex;
@@ -156,6 +183,7 @@
 	text-align: center;
 	
 }
+/* property defined in class ".about" is visible in website as "About me" section. */
 .about h1{
 	display: flex;
 	text-align: left;
@@ -186,14 +214,13 @@
 	font-weight: bold;
 
 }
+/* this designed block containing my contact information */
 .contact-info .aa-next{
 	margin-left: 30px;
 	font-size: 18px;
 	line-height: 50px;
 	margin-top: 30px;
 	margin-bottom: 100px;
-
-
 }
 fieldset{
 	text-align:left;
@@ -201,14 +228,18 @@ fieldset{
 	padding: 3%;
 	line-height: 27px;
 }
+/* fieldset property bounds area for form section */
 
 /* Css for cv page starts from here */
+/* Css of section area of "cv.html" is same as "index.html"
+from line no(7 to 79)*/
 .cv_title{
 	color: #c72121;
 	font-size: 40px;
 	margin: 100px 50px;
 	font-weight: bold;
 }
+/* the value of color is adjusted from Chrome developer tool */
 
 .for_cv{
 	min-height: 100vh;
@@ -243,7 +274,8 @@ fieldset{
 	font-weight: bold;
 	text-align: center;
 }
-
+/* float property used above helps to display ".p_info" and "qualification"
+ in two columns. */
 
 .current{
 	background: #c72121;
@@ -267,7 +299,7 @@ fieldset{
 	font-weight: bold;
 	text-align: center;
 }
-
+/* left float brought ".skills", ".container" nearer to each other */
 .hobbies{
 	background: #c72121;
 	height: 300px;
@@ -278,21 +310,55 @@ fieldset{
 	font-weight: bold;
 	text-align: center;
 }
+/*Css for CV page ends here */ 
 
+/* CSS for Site report starts from here */
+/* Css of section area of site report page is same as "index.html"
+from line no(7 to 79)*/
+.text-area{
+	width: 100%;
+}
+.az{ 
+	color: darkgreen; 
+	text-align: left;
+	font-size: 25px;
+	line-height: 40px;
+	width: 95%;
+	margin: 40px;
+}
 
+.text-area span{
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+/* here values are assign for span tag of ".text-area" class*/
 
+.ab{
+	text-align: left;
+	font-size: 20px;
+	line-height: 40px;
+	width: 95%;
+	margin: 40px;
 
+}
+.bv{
+	transform: skewX(-20deg);
+	margin-left: 12px;
+}
+/* skew property helped to make source italic, used in citation*/
 
-
-
-
-
-
-
+.ab img{
+	margin: 60px 70px;
+	width: 85%;
+	height: 650px;
+}
+/* this value is for all image used in div ".text-area" */
 
 
 @media screen and ( max-width: 1262px){
-/* media query for index page starts from here */
+/* mediaquery for class ".container" of index page, portfoliopage,
+contact page, cv page, site report page starts here */
 
 .navbar{
 	display: grid;
@@ -300,7 +366,8 @@ fieldset{
  	grid-row-gap: 5px;
  	transition: all 0.3s ease;
 }
-
+/* use of grid property here display navlist items in multiple rows
+giving attractive layout */
 
 .navbar img{
 	margin-left: 40%;
@@ -319,9 +386,13 @@ fieldset{
 	display: flex;
 	flex-direction: row;
 }
+/* this value of navlist's element is only for responsive view */
 .v-class{
 	visibility: hidden;
 }
+/* here hidden visibility is specified so that, the nav-list is visible only when 
+hamburger icon is toggled */
+
 .burger{
 	margin-left: 0px;
 	width: 48px; 
@@ -342,17 +413,30 @@ fieldset{
 	background: white;
 	border: 1px solid black;
 }
+/* values for ".ham" help to make hamburger icon */
 .textbox p{
 	line-height: 38px;
 	
 }
-/* mediaquery of index page ends here */
+/* mediaquery for class ".container" of index page, portfoliopage,
+contact page, cv page, site report page ends here */
+
+/*media query for portfolio page starts*/
+.middle img{
+	width: 85%;
+	margin: 25px auto;
+	height: 400px;
+}
+/*media query for portfolio page ends here*/
+
+/* media query for cv page starts here */
 .for_cv{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+/* value assigned here displays each block in same columns */
 .p_info, .qualification, .current, .skills, .hobbies{
 	height: 490px;
 	width: 55%;
@@ -365,6 +449,29 @@ fieldset{
 	line-height: 60px;
 	font-size: 28px;
 }
+
+/*mediaqueries for sitereport starts from here*/
+
+.text-area{
+ 	width: 95%;
+
+}
+.az{ 
+	line-height: 35px;
+	margin: 40px 55px;
+}
+
+.ab{
+	line-height: 35px;
+	margin: 40px 55px;
+
+}
+
+
+.ab img{
+	margin: 55px 60px;
+	height: 620px;
+}
 }
 
 
@@ -376,26 +483,27 @@ fieldset{
 	
 
 }
-/* media query of portfolio starts from here */
+/* media query for portfolio starts from here */
 .middle{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
+/*  flex used her displays  ".left" and ".right" div in  same column */
 .middle .left{
 	margin: auto;
 	width: 68%;
-	height: 510px;
+	height: 580px;
 	font-size: 28px;
 }
 .middle .right{
 	margin: auto;
 	width: 68%;
-	height: 510px;
+	height: 580px;
 	font-size: 28px;
 	margin-top: 80px;
 }
-
+/* media query for portfolio ends here */
 .cv_title{
 	font-size: 30px;
 }
@@ -413,10 +521,27 @@ fieldset{
 	
 	margin: 15px auto;
 	text-align: center;
-	width: 90%;
+	width: 80%;
 }
+/* mediaqueries for Site report starts from here */
+
+.az{ 
+	font-size: 23px;
+	margin: 30px 40px;
 }
 
+.ab{
+	margin: 30px 40px;
+	line-height: 35px;
+
+}
+.ab img{
+	margin: 30px 10px;
+	height: 500px;
+}
+}
+/* decresing value of width, height, font-size, line-height 
+help to adapt according to screen size */
 
 @media screen and ( max-width: 500px){
 body{
@@ -425,11 +550,11 @@ body{
 .container{
 	margin-left: 0px;
 	width: 100%;
-	height: 125vh;
+	height: 140vh;
 }
 
 .nav-list ul li a {
-	font-size: auto;
+	font-size: 18px;
 	
 }
 .textbox{
@@ -443,19 +568,54 @@ body{
 	font-size: 18px;
 	line-height: 25px;
 }
+
+/* media query for portfolio page starts from here */
+.middle img{
+	height: 260px;
+}
 .middle .left{
-	height: 380px;
-	font-size: 20px;
+	height: 430px;
+	font-size: 18px;
 }
 
 .middle .right{
-	height: 380px;
-	font-size: 20px;
+	height: 430px;
+	font-size: 18px;
+}
+/* media query for portfolio page ends here */
 }
 
 @media screen and ( max-width: 400px){
 .container{
 	height: 200vh;
 	overflow: hidden;
+} 
+/* overflowing margin, padding, is hidden for width less than
+300px with help of this media query*/ 
+
+.textbox-title{
+	font-size: 23px; 
 }
+
+fieldset{
+	width: 70%;
 }
+
+/* media query for sitereport page starts from here */
+.az{ 
+	font-size: 20px;
+	margin: 20px 10px;
+}
+
+.ab{
+	font-size: 15px;
+	margin: 20px 10px;
+	line-height: 25px;
+
+}
+.ab img{
+	height: 400px;
+}
+/* media query for site report page ends here */
+}
+

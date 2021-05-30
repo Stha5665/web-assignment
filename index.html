@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- lang attribute to the html start tag declare language of this documents -->
 	<head>
+		<meta charset="UTF-8">
 		<title> Home Page </title>
-		<link href="style.css" type="text/css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" type="text/css" rel="stylesheet"> <!-- This link to our CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- This property is defined to make my website responsive -->
 	</head>
 	<body>
-		<section class="container">
+		<section class="container"> <!-- class named container starts from here -->
+			<h2>a</h2> <!-- h2 tag is specified here to add identifying headings to all section,that was required for complete validation of HTML-->
 			<nav class="navbar">
-				<a href="index.html"><img src="img/logo.png", alt="logo"></a>
+				<a href="index.html"><img src="img/logo.png" alt="The area for logo"></a>
 				<div class="burger">
+					<!-- burger class is specified for making hamburger icon which is visible in responsive view -->
 					<div class="ham"></div>
 					<div class="ham"></div>
 					<div class="ham"></div>
 				</div>
-				<div class="nav-list v-class">
+				<div class="nav-list v-class"> <!-- v-class here determines visibility property of navlist in responsive view -->
 					<ul>
 						<li><a href="index.html"> Home </a></li>
 						<li><a href="portfolio.html"> Portfolio </a></li>
 						<li><a href="contact.html"> Contact </a></li>
 						<li><a href="cv.html"> Cv </a></li>
-						<li><a href="sitereport.html"> site report </a> </li>
+						<li><a href="sitereport.html"> site report </a></li>
 					</ul>
+				</div>
 			</nav>
-			<div class="textbox">
+			<div class="textbox"> <!-- This class conatins some introduction to my homepage -->
 				<div class="textbox-title"><span> Hi! </span> This is my 
-					<div class="slider">
+					<!-- span tag helps to give different color for specific word, which property is defined in CSS -->
+					<div class="slider"> <!-- slider class helped to perform animation -->
 						<div>Homepage.</div>
 						<div>Homepage.</div>
 						<div>Homepage.</div>
@@ -35,7 +42,7 @@
 				<p> Welcome, to my homepage. This is homepage for my website.<br> As, I was assigned to make portfolio website, I have followed all necessary guidelines and ensure that I had completed my task. <br>Hope, you liked my website.Thankyou, Namaste!
 				</p>
 			</div>
-		</section>
-		<script src="js/ham_menu.js"></script>
+		</section> <!-- class ".container" ends here -->
+		<script src="js/ham_menu.js"></script> 
 	</body>
 </html>
