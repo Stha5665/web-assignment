@@ -477,7 +477,9 @@ contact page, cv page, site report page ends here */
 
 @media screen and ( max-width: 794px){
 
-
+.textbox-title{
+	margin-top: 140px;
+}
 .textbox p{
 	margin-bottom: 5px;
 	
